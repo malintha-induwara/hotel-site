@@ -10,9 +10,90 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="/css/body.css" />
   </head>
-  <body>
-    <h1>Hello, world!</h1>
+  <body class="vh-100">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand fs-4" href="#">Offcanvas navbar</a>
+
+        <!-- Button -->
+
+        <button
+          class="navbar-toggler shadow-none border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Sidebar -->
+        <div
+          class="sidebar offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header text-white border-bottom">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white shadow-none"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- Side bar body -->
+          <div class="offcanvas-body d-flex flex-lg-row flex-column p-4">
+            <ul
+              class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3"
+            >
+              <li class="nav-item mx-2">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+
+            <div class="d-flex justify-content-center">
+              <button type="button" class="btn btn-outline-light">
+                Browse Rooms
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section
+        class="w-100 vh-100 d-flex flex-column justify-content-center align-items-center text-white fs-1"
+      >
+        <h1 style="font-size: 3.5rem" class="w-75 text-center">
+          Indulge in luxurious comfort within your room.
+        </h1>
+        <h1 style="font-size: 1.2rem" class="w-75 text-center">
+          So that we can achieve minimal disturbace,who amoung us does not
+          engage in the laborious tasks unles it is necessary, and undertakes
+          them with utmost care, in pursuit of pleasure?
+        </h1>
+           <button type="button" class="btn btn-outline-light m-5 ">
+                Browse Rooms
+              </button>
+      </section>
+    </main>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
