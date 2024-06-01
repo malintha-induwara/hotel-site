@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  padding: 3rem;
+}
+
+h1 {
+  font-size: 3rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.image {
+  display: block;
+  width: 100%;
+}

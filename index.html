@@ -16,7 +16,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
       <div class="container">
         <!-- Logo -->
-        <a class="navbar-brand fs-4" href="#">Offcanvas navbar</a>
+        <a class="navbar-brand fs-4" href="#">Hotel Translavania</a>
 
         <!-- Button -->
 
@@ -56,13 +56,13 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#secondSection">About</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#">Blog</a>
+                <a class="nav-link" href="#forthSection">Services</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#fifthSection">Contact</a>
               </li>
             </ul>
             <div class="d-flex justify-content-center">
@@ -71,7 +71,11 @@
                 class="btn btn-outline-light"
                 style="border-radius: 0"
               >
-                Browse Rooms
+                <a
+                  href="#thirdSection"
+                  style="text-decoration: none; color: inherit"
+                  >Browse Rooms</a
+                >
               </button>
             </div>
           </div>
@@ -82,6 +86,7 @@
     <main>
       <!-- first section -->
       <section
+        id="firstSection"
         class="w-100 vh-100 d-flex flex-column justify-content-center align-items-center text-white fs-1"
       >
         <h1 style="font-size: 3.5rem" class="w-75 text-center">
@@ -97,12 +102,14 @@
           class="btn btn-outline-light m-5"
           style="border-radius: 0"
         >
-          Browse Rooms
+          <a href="#thirdSection" style="text-decoration: none; color: inherit"
+            >Browse Rooms</a
+          >
         </button>
       </section>
 
       <!-- second section -->
-      <section class="w-100 d-flex flex-column">
+      <section id="secondSection" class="w-100 d-flex flex-column">
         <div class="container">
           <div class="row">
             <div class="col-12 col-md-6">
@@ -114,13 +121,6 @@
                 voluptates, quae, quos quia quibusdam quidem voluptatum
                 doloremque quas nemo doloribus.
               </p>
-              <button
-                type="button"
-                class="btn btn-outline-secondary p-3"
-                style="border-radius: 0"
-              >
-                Explore More
-              </button>
             </div>
             <div class="col-12 col-md-6 mt-md-0 mt-5">
               <img
@@ -133,12 +133,13 @@
         </div>
       </section>
 
+      <!-- thired section -->
       <section class="d-flex flex-column align-items-center">
         <h1 class="m-5 w-50 text-center">
           Indulge in our cozy rooms with family.
         </h1>
 
-        <div class="container">
+        <div id="thirdSection" class="container">
           <div class="row gx-0">
             <div class="col-12 col-sm-6">
               <img src="/images/1.jpg" alt="img-1" class="img-fluid" />
@@ -162,8 +163,74 @@
           class="btn btn-outline-secondary p-3 m-5"
           style="border-radius: 0"
         >
-          VIEW MORE ROOMS
+          <a
+            href="/pages/gallery.html"
+            style="text-decoration: none; color: inherit"
+          >
+            Image Gallery</a
+          >
         </button>
+      </section>
+
+      <section>
+        <div class="container-fluid pb-5" data-wow-delay="0.1s">
+          <div class="container">
+            <div class="bg-white shadow" style="padding: 35px">
+              <div class="row g-2">
+                <div class="col-md-10">
+                  <div class="row g-2">
+                    <div class="col-md-3">
+                      <div class="date" id="date1" data-target-input="nearest">
+                        <input
+                          type="text"
+                          class="form-control datetimepicker-input"
+                          placeholder="Check in"
+                          data-target="#date1"
+                          data-toggle="datetimepicker"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="date" id="date2" data-target-input="nearest">
+                        <input
+                          type="text"
+                          class="form-control datetimepicker-input"
+                          placeholder="Check out"
+                          data-target="#date2"
+                          data-toggle="datetimepicker"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <select class="form-select">
+                        <option selected>Adult</option>
+                        <option value="1">Adult 1</option>
+                        <option value="2">Adult 2</option>
+                        <option value="3">Adult 3</option>
+                      </select>
+                    </div>
+                    <div class="col-md-3">
+                      <select class="form-select">
+                        <option selected>Child</option>
+                        <option value="1">Child 1</option>
+                        <option value="2">Child 2</option>
+                        <option value="3">Child 3</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <button
+                    class="btn btn-primary w-100"
+                    style="border-radius: 0"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section
@@ -194,18 +261,292 @@
                 Animi dolorum unde illo sequi possimus praesentium, maxime ipsam
                 nihil, quibusdam, suscipit quasi distinctio nemo voluptatem!
               </p>
-
-              <button
-                type="button"
-                class="btn btn-outline-light p-3"
-                style="border-radius: 0"
-              >
-                More about spa
-              </button>
             </div>
           </div>
         </div>
       </section>
+
+      <section id="forthSection">
+        <h1 class="text-center mt-5">Service</h1>
+        <h6 class="text-center mb-5">Dine & Relax</h6>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 align-content-center">
+              <h6>DINING</h6>
+              <h1>Restrurent</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+                debitis deleniti rerum numquam libero, ipsa autem dolore
+                deserunt dolores saepe necessitatibus aut. Ratione accusamus nam
+                tempore sapiente ipsum, ab error.
+              </p>
+            </div>
+
+            <div class="col-12 col-md-6 mt-md-0 mt-5">
+              <img
+                src="/images/resturent.jpg"
+                alt="resturent"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="container mt-3">
+          <div class="row">
+            <div class="col-12 col-md-6 align-content-center">
+              <h6>RELAX</h6>
+              <h1>Spa & Wellness</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+                debitis deleniti rerum numquam libero, ipsa autem dolore
+                deserunt dolores saepe necessitatibus aut. Ratione accusamus nam
+                tempore sapiente ipsum, ab error.
+              </p>
+            </div>
+
+            <div class="col-12 col-md-6 mt-md-0 mt-5">
+              <img src="/images/spa.jpg" alt="resturent" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+
+        <div class="container mt-3">
+          <div class="row">
+            <div class="col-12 col-md-6 align-content-center">
+              <h6>DRINKS</h6>
+              <h1>Roof Top Bar</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+                debitis deleniti rerum numquam libero, ipsa autem dolore
+                deserunt dolores saepe necessitatibus aut. Ratione accusamus nam
+                tempore sapiente ipsum, ab error.
+              </p>
+            </div>
+
+            <div class="col-12 col-md-6 mt-md-0 mt-5">
+              <img src="/images/bar.jpg" alt="resturent" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="w-100 d-flex justify-content-center text-white p-5 mt-5"
+        style="
+          background-image: linear-gradient(
+              rgba(0, 0, 0, 0.5),
+              rgba(0, 0, 0, 0.5)
+            ),
+            url('/images/backdrop2.jpg');
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <div class="row w-75">
+          <div class="col-12 col-md-6 align-content-center">
+            <img
+              src="images/review.png"
+              alt="review"
+              class="img-fluid"
+              width="100px"
+            />
+            <h3>The stff Service is impeccable</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima
+              modi dolorem expedita dolorum commodi perspiciatis sapiente fuga
+              excepturi earum, ut ad doloribus, dignissimos inventore quos illo
+              accusantium eligendi est facilis!
+            </p>
+            <div class="d-flex align-items-center container">
+              <img
+                src="/images/review1.png"
+                alt="review"
+                width="60px"
+                height="60px"
+                style="border-radius: 30px"
+              />
+              <h6 class="ms-4">Chamith Kavinda</h6>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 align-content-center">
+            <img
+              src="images/review.png"
+              alt="review"
+              class="img-fluid"
+              width="100px"
+            />
+            <h3>The stff Service is impeccable</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima
+              modi dolorem expedita dolorum commodi perspiciatis sapiente fuga
+              excepturi earum, ut ad doloribus, dignissimos inventore quos illo
+              accusantium eligendi est facilis!
+            </p>
+            <div class="d-flex align-items-center container">
+              <img
+                src="/images/review2.png"
+                alt="review"
+                width="60px"
+                height="60px"
+                style="border-radius: 30px"
+              />
+              <h6 class="ms-4">Danuka Rangith</h6>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="d-flex flex-column align-items-center mb-5">
+        <h1 class="m-5">Weekly Events</h1>
+
+        <div class="container">
+          <div class="row gx-0 gy-3 gy-sm-0">
+            <div class="col-12 col-sm-6 position-relative">
+              <img src="/images/event1.jpg" alt="img-1" class="img-fluid" />
+              <div
+                class="position-absolute bottom-0 start-0 p-3 text-white"
+                style="background: rgba(0, 0, 0, 0.5)"
+              >
+                Explore nature & resort
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 position-relative">
+              <img src="/images/event2.jpg" alt="img-2" class="img-fluid" />
+              <div
+                class="position-absolute bottom-0 start-0 p-3 text-white"
+                style="background: rgba(0, 0, 0, 0.5)"
+              >
+                Wellness lake & comfort
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <button
+          type="button"
+          class="btn btn-outline-secondary p-3 m-5"
+          style="border-radius: 0"
+        >
+          VIEW MORE EVENTS
+        </button> -->
+      </section>
+
+      <footer
+        class="section footer-section p-5"
+        style="background: #1a1a1a; color: #6c757d"
+      >
+        <div id="fifthSection" class="container">
+          <div class="row mb-4">
+            <div class="col-md-3 mb-5">
+              <ul class="list-unstyled link">
+                <li>
+                  <a href="#" style="text-decoration: none; color: #6c757d"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a href="#" style="text-decoration: none; color: #6c757d"
+                    >Terms &amp; Conditions</a
+                  >
+                </li>
+                <li>
+                  <a href="#" style="text-decoration: none; color: #6c757d"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a href="#" style="text-decoration: none; color: #6c757d"
+                    >Rooms</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3 mb-5">
+              <ul
+                class="link"
+                style="list-style: none; text-decoration: none; color: #6c757d"
+              >
+                <li>
+                  <a href="#" style="text-decoration: none; color: #6c757d"
+                    >The Rooms &amp; Suites</a
+                  >
+                </li>
+                <li>
+                  <a href="#" style="text-decoration: none; color: #6c757d"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a href="#" style="text-decoration: none; color: #6c757d"
+                    >Contact Us</a
+                  >
+                </li>
+                <li>
+                  <a href="#" style="text-decoration: none; color: #6c757d"
+                    >Restaurant</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3 mb-5 pr-md-5 contact-info">
+              <p>
+                <span class="d-block"
+                  ><span class="ion-ios-location h5 mr-3 text-primary"></span
+                  >Address:</span
+                >
+                <span>
+                  6th Mail Post, <br />
+                  Magedara Galle</span
+                >
+              </p>
+              <p>
+                <span class="d-block"
+                  ><span class="ion-ios-telephone h5 mr-3 text-primary"></span
+                  >Phone:</span
+                >
+                <span> (+94) 77 11 055 75</span>
+              </p>
+              <p>
+                <span class="d-block"
+                  ><span class="ion-ios-email h5 mr-3 text-primary"></span
+                  >Email:</span
+                >
+                <span> induwara2k@gmail.com</span>
+              </p>
+            </div>
+            <div class="col-md-3 mb-5">
+              <p>Sign up for our newsletter</p>
+              <form action="#" class="footer-newsletter">
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Email..."
+                  />
+                  <button type="submit" class="btn">
+                    <span class="fa fa-paper-plane"></span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="row pt-5">
+            <p class="col-md-6 text-left">
+              All Right Reserved. Designed and Developed by SYREX ❤️
+            </p>
+
+            <p class="col-md-6 text-right social">
+              <a href="#"><span class="fa fa-tripadvisor"></span></a>
+              <a href="#"><span class="fa fa-facebook"></span></a>
+              <a href="#"><span class="fa fa-twitter"></span></a>
+              <a href="#"><span class="fa fa-linkedin"></span></a>
+              <a href="#"><span class="fa fa-vimeo"></span></a>
+            </p>
+          </div>
+        </div>
+      </footer>
     </main>
 
     <script
